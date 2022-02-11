@@ -20,7 +20,7 @@ timezone: Asia/Seoul
 
 title: DIGANG's BLOG                          # the main title
 
-tagline: 디갱이의 CODING 기록   # it will display as the sub-title
+tagline: #디갱이의 CODING 기록   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   A minimal, portfolio, sidebar,
