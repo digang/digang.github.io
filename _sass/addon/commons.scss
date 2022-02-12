@@ -690,7 +690,7 @@ $sidebar-display: "sidebar-display";
 
   .site-subtitle {
     font-size: 95%;
-    color: rgba(254, 254, 254, 99%);;
+    color: rgba(254, 254, 254, 99%);
     line-height: 1.2rem;
     word-spacing: 1px;
     margin: 0.5rem 1.5rem 0.5rem 1.5rem;
@@ -705,16 +705,18 @@ $sidebar-display: "sidebar-display";
     letter-spacing: 1px;
     display: table-cell;
     vertical-align: middle;
+    color : rgba(254, 254, 254, 99%);
   }
 
   .nav-item {
     text-align: center;
     display: table;
     height: $tab-height;
+    color: #feedff;
 
     &.active {
       .nav-link {
-        color: var(--sidebar-active-color);
+        color: #feedff;
       }
     }
 
@@ -747,7 +749,7 @@ $sidebar-display: "sidebar-display";
           width: $cursor-width;
           height: $tab-cursor-height;
           border-radius: 1px;
-          background-color: var(--nav-cursor-color);
+          background-color: rgba(254, 254, 254, 99%);
           pointer-events: none;
         }
       }
