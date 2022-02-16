@@ -1,0 +1,39 @@
+---
+categories: [TOP_CATEGORIE, SUB_CATEGORIE]
+tags: [React, 리액트, React_key, 리액트 키 지정] # TAG 는 소문자로 작성할 것
+---
+## 예제 코드
+
+```jsx
+const mapPostToElement = (arr) => {
+	return arr.map((post, index) => {
+		return( 
+			<div key={post.id}.
+				<p>{post.title}</p>
+				<p>{post.content}</p>
+			</div>
+		)
+	})
+}
+```
+
+## <span style="color:red">key 값은 뭘까?</span>
+
+mapping하는 부분을 보면 key 속성을 볼 수가 있다. 배열의 각 요소마다 고유한 key값을 지정해 주는 속성인데 만약 key값을 생략한다면 어떻게될까?
+
+아무 이상없이 랜더링은 되지만, React는 아래와 같은 경고를 띄운다.
+
+> `Each child in an array should have a unique “key” prop.`
+> 
+
+그럼 key값은 언제 필요한 것일까?
+
+## **<span style="color:red">요소의 변화를 알아차리기 위해 필요하다</span>**
+
+리액트 공식문서를 보면, key는 어떤 아이템이 변화되거나, 추가, 삭제되었는지를 알아차리기 위해 필요하다고 말한다.
+
+리액트는 state에서 변경사항이 있는 부분만 캐치해서 리랜더링 해준다. 리액트 유저라면 알고겠지만, 굳이 변경이 없는 데이터까지 Dom을 조작해서 불필요한 자원을 낭비하지 않겠다는 것이다. 그렇다면 state의 배열에 어떠한 요소가 추가가 된다고 가정해보자. 배열에 어떤 요소를 추가했으니 배열이 변경된 것이라고 생각할 수 있는데, 과연 react는 배열 전체를 리랜더링 할까? 아니면 배열에 추가된 요소 한가지만 다시 리랜더링 할까?
+
+리액트는 참 똑똑하게 배열에 추가된 딱 한가지 요소만 리랜더링한다. 다만, 배열의 key값을 고유하게 넘겨주었을 때만.
+
+즉 사용자가 직접 key 값을 지정하여, 이 값이 변경될 시 변경된 부분만 리랜더링 하라! 를 명시할 수 있도록 리액트는 기회를 주는 것이다. 말 그대로 ‘기회’ 이기 때문에 사용하지 않아도 문제는 없지만, key값을 사용하지 않는다면 react를 잘 사용한다고 볼 수 없다.
