@@ -1,3 +1,7 @@
+---
+categories: [TOP_CATEGORIE, SUB_CATEGORIE]
+tags: [React, React_lifestyle, 리액트 라이프 스타일] # TAG 는 소문자로 작성할 것
+---
 ## React의 LifeStyle
 
 >리액트가 모든 요소들을 View 로 갖기 때문에 이 View를 데이터의 단방향으로 보장을 하면서 클래스 내애서 단일적으로 관리하기 위한 로직을 마련하는 기능을 일컫는다.
