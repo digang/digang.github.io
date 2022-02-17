@@ -1,5 +1,5 @@
 ---
-categories: [TOP_CATEGORIE, SUB_CATEGORIE]
+categories: [FrontEnd, React]
 tags: [React, React_lifestyle, 리액트 라이프 스타일] # TAG 는 소문자로 작성할 것
 ---
 ## React의 LifeStyle

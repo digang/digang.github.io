@@ -31,10 +31,10 @@ description: >-                        # used by seo meta and the atom feed
 url: 'https://digang.github.io'
 
 github:
-  username: github_username             # change to your github username
+  username: digang             # change to your github username
 
 twitter:
-  username: twitter_username            # change to your twitter username
+  username: digang            # change to your twitter username
 
 social:
   # Change to your full name.
@@ -72,7 +72,7 @@ google_analytics:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode:   # [light|dark]
+theme_mode:   light #[light|dark]
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
@@ -99,6 +99,13 @@ comments:
 
 paginate: 10
 
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
@@ -111,6 +118,7 @@ kramdown:
     block:
       line_numbers: true
       start_line: 1
+    math-engine: mathjax
 
 collections:
   tabs:

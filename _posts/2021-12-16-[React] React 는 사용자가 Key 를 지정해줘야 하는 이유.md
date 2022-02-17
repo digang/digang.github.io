@@ -1,5 +1,5 @@
 ---
-categories: [TOP_CATEGORIE, SUB_CATEGORIE]
+categories: [FrontEnd, React]
 tags: [React, 리액트, React_key, 리액트 키 지정] # TAG 는 소문자로 작성할 것
 ---
 ## 예제 코드

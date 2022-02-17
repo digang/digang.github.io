@@ -1,5 +1,5 @@
 ---
-categories: [TOP_CATEGORIE, SUB_CATEGORIE]
+categories: [English, OPIc]
 tags: [opic, english, test, roleplay] # TAG 는 소문자로 작성할 것
 ---
 
