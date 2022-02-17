@@ -2,7 +2,7 @@
  * The syntax light mode code snippet colors.
  */
 
-@mixin light-syntax {
+ @mixin light-syntax {
   /* see: <https://raw.githubusercontent.com/jwarby/pygments-css/master/github.css> */
   .highlight table td { padding: 5px; }
   .highlight table pre { margin: 0; }
@@ -152,7 +152,7 @@
   .highlight .s, .highlight .sa, .highlight .dl {
     color: #d7d787;
   }
-  .highlight .na {
+  .highlight .na{
     color: #a6e22e;
   }
   .highlight .nc {
@@ -210,16 +210,16 @@
   }
   .highlight {
     color: #f8f8f2;
-    background-color: #1b1d1e;
+    background-color: #2e2d2d;
   }
-  .highlight .n, .p{
+  .highlight .n, .p, .nx{
     color : #f8f8f2
   }
   
 
   /* --- custom light colors --- */
-  --highlight-bg-color: #252525;
-  --highlighter-rouge-color: #2f2f2f;
+  --highlight-bg-color: #2e2d2d;
+  --highlighter-rouge-color: #ff3b3b;
   --highlight-lineno-color: #c2c6cc;
   --inline-code-bg: #f3f3f3;
   --code-header-text-color: #a3a3b1;

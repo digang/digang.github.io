@@ -1,6 +1,8 @@
 ---
+layout : post
 categories: [English, OPIc]
 tags: [opic, english, test, roleplay] # TAG 는 소문자로 작성할 것
+title : "[OPIc] Roleplay 유형"
 ---
 
 ## 1. Role- play 잘하는 법
