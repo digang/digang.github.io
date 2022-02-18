@@ -8,6 +8,19 @@
     color : #a6e22e;
   }
 
+  .custom_underline{
+    width: max-content;
+    position: relative;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-color:#bf00ff;
+    align-items: center;
+  }
+
+  .p, .custom_underline{
+    align-items: center;
+  }
+
   .highlight table td { padding: 5px; }
   .highlight table pre { margin: 0; }
   .highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
