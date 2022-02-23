@@ -79,7 +79,7 @@ use_math : true
 - Dropout (p=0.5)
 - VGG16, VGG19
 
-## **3x3 의 convolution filters 만 사용하였다**
+### **3x3 의 convolution filters 만 사용하였다**
 
 >**필터의 사이즈가 3x3 으로 고정된 이유 ?** -> 발표한 논문에 의하면 연산하여 발생하는 파라미터 수가 줄어들고 ReLU 가 활성화 함수로 들어갈 수 있는 곳이 많아진다는 장점이 존재한다.
 
