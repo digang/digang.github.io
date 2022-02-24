@@ -149,5 +149,38 @@ ResNet은 residual repesentation 함수를 학습함으로써 신경망이 152 l
 
 **기울기 소실 문제가 해결되면 정확도가 감소되지 않고 신경망의 layer를 깊게 쌓을 수 있어 더 나은 성능의 신경망을 구축할 수 있다!.**
 
+---
+
+## **DenseNet**
+
+![DenseNet](https://hoya012.github.io/assets/img/densenet/1_comment.png)
+<center>출처 : DenseNet 논문</center>
+
+### **Dense Connectivity**
+
+**DenseNet 은 모든 레이어의 피쳐맵을 연결한다. 이전 레이어의 피쳐맵을 그 이후의 모든 레이어에 연결한다.**
+
+<span class="custom_underline">**하지만 여기서 차이점이 있다. ResNet과 달리 연결할때, 덧셈이 아닌 concatenate(사슬처럼 잇다)를 수행한다.**</span> 때문에 연결할 때, 피쳐맵의 크기가 동일해야한다는 점도 작용한다. 
+
+- **이로인해 얻는 장점은?**
+  - Strong gradient flow, information flow : 기존의 CNN 모델은 많은 레이어를 통과할 경우, 처음 레이어의 피쳐맵에 대한 정보가 끝에 다다라서 사라지지만 DensNet의 경우 정보가 소실되지 않는다.
+  - 파라미터수와 연산량이 적다 : DenseNet은 적은 채널수를 이용하기 때문에, 적은 채널 수의 피쳐맵을 생성한다. 그리고 이 피쳐맵이 이전 레이어의 피쳐맵과 결합하여 다음 레이어에 전달된다.
+
+### **Dense Block**
+
+Concatenation 을 수행하기 위해서는, 피채맵의 크기가 동일해야 하지만, 피쳐맵의 크기를 감소시키는 Pooling 연산 또한 CNN에서 필수적인 요소이다. 
+
+<span class="custom_underline">**따라서 이를 해결하기 위해, Dense Block 을 수행한다.**</span>
+
+![Dense-block](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcRv7cz%2Fbtq0n9WUSCS%2FXHPMVeH4hP6jmv2UXnKdQk%2Fimg.png)
+<center>출처 : DenseNet 논문</center>
+
+- transition layer ( 그림상에서 convolution , pooling ) 
+  -  피쳐맵의 크기와 채널을 줄인다. 
+  -  차원 축소의 개념.
+- Dense Block
+  - 피쳐맵의 크기와 채널이 늘어난다. 
+  - 채널의 수가 기하급수적으로 증가한다.
+
 
 
